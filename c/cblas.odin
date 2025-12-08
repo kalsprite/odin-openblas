@@ -7,7 +7,7 @@ when ODIN_OS == .Windows {
 	foreign import openblas "../OpenBLAS-0.3.30-x64-64/lib/libopenblas.lib"
 	// foreign import openblas "../openblas.lib"
 } else when ODIN_OS == .Linux {
-	foreign import openblas "system:openblas"
+	foreign import openblas "system:openblas_64"
 }
 
 

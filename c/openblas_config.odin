@@ -6,7 +6,7 @@ import "core:c"
 when ODIN_OS == .Windows {
 	foreign import lib "../../vendor/linalg/windows-x64/lib/openblas64.lib"
 } else when ODIN_OS == .Linux {
-	foreign import lib "system:openblas"
+	foreign import lib "system:openblas_64"
 }
 
 OS_WINNT :: 1
